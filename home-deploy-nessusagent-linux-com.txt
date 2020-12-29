@@ -1,1 +1,1 @@
-wget --no-check-certificate -O - https://levi9-my.sharepoint.com/:u:/r/personal/o_akvilov_levi9_com/Documents/Nessus/home-deploy-nessusagent-linux.sh?csf=1&web=1&e=kU26RX | bash
+wget --no-check-certificate -O - https://github.com/oakvilov/Repository/blob/main/home-deploy-nessusagent-linux.sh | bash
