@@ -16,6 +16,3 @@ dpkg -i NessusAgent-8.2.2-ubuntu1110_amd64.deb
 
 # Configuring Nessus Agent Settings
 /opt/nessus_agent/sbin/nessuscli agent link --key=$nessus_key --name=$Your_Hostname --groups=$nessus_group --host=$nessus_host
-
-# Starting Nessus Agent
-/etc/init.d/nessusagent start
