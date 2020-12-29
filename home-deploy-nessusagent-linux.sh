@@ -1,7 +1,7 @@
 #!/usr/bin/sudo bash
-# Installation Nessus Agent v.8.13.1
+# Installation Nessus Agent v.7.6.3
 # Variables
-nessus_installer_url="https://levi9-my.sharepoint.com/:u:/r/personal/o_akvilov_levi9_com/Documents/Nessus/Nessus-8.13.1-ubuntu1110_amd64.deb?csf=1&web=1&e=tpBlNe"
+nessus_installer_url="https://github.com/oakvilov/Repository/blob/main/NessusAgent-7.6.3-ubuntu910_amd64.deb"
 nessus_key="be6e817a936774295bcda98fd1dc6f3c8238d2b6fae7ae5bfeea7925689d83c8"
 nessus_host="nessus.levi9.com --port=8834"
 nessus_group="Ukraine-Clients"
@@ -15,7 +15,7 @@ t="\033[0m"
 wget --no-check-certificate $nessus_installer_url
 
 #echo -ne "${y}Unpacking and installing Nessus Agent${t}\n"
-dpkg -i Nessus-8.13.1-ubuntu1110_amd64.deb
+dpkg -i NessusAgent-7.6.3-ubuntu910_amd64.deb
 
 #echo -ne "${y}Configuring Nessus Agent Settings${t}\n"
 /opt/nessus_agent/sbin/nessuscli agent link --key=$nessus_key --name=$Your_Hostname --groups=$nessus_group --host=$nessus_host
