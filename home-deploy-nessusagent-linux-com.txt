@@ -1,1 +1,0 @@
-wget --no-check-certificate -O - https://github.com/oakvilov/Repository/raw/main/home-deploy-nessusagent-linux.sh | bash
